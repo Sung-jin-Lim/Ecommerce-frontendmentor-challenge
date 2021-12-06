@@ -29,6 +29,9 @@ a {
 
 html {
   width: 100%;
+  // ::-webkit-scrollbar {
+  //   display: none;
+  // }
 }
 
 // final css
@@ -67,9 +70,48 @@ nav {
 
 // carousel
 
+.carousel {
+  position: relative;
+  display: block;
+}
+
+.arrows {
+  width: 100vw;
+
+  // arrows
+
+  img {
+    top: 40%;
+    z-index: 2;
+    position: absolute;
+    height: 1rem;
+    width: 1rem;
+    background-color: white;
+    padding: 1rem;
+    border-radius: 100%;
+  }
+
+  .arrow1 {
+    right: 2rem;
+  }
+
+  .arrow2 {
+    left: 2rem;
+  }
+}
+
 .siema {
+  z-index: -1;
   width: 100%;
   img {
     width: 100%;
+    overflow: hidden;
   }
+  position: relative;
+}
+
+// main
+
+.main {
+  padding: 0 1.5rem;
 }

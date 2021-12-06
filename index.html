@@ -46,38 +46,46 @@
         </div>
       </nav>
 
-      <div class="siema">
-        <div>
-          <img src="images/image-product-1-thumbnail.jpg" alt="" />
+      <div class="carousel">
+        <div class="arrows">
+          <img src="images/icon-next.svg" alt="" class="arrow1 next" />
+          <img src="images/icon-previous.svg" alt="" class="arrow2 prev" />
         </div>
-        <div>
-          <img src="images/image-product-2-thumbnail.jpg" alt="" />
-        </div>
-        <div>
-          <img src="images/image-product-3-thumbnail.jpg" alt="" />
-        </div>
-        <div>
-          <img src="images/image-product-4-thumbnail.jpg" alt="" />
-        </div>
-      </div>
-      <div class="text">
-        <div class="orange-text">Sneaker Company</div>
-        <h1>Fall Limited Edition Sneakers</h1>
-        <p>
-          These low-profile sneakers are your perfect casual wear companion.
-          Featuring a durable rubber outer sole, they’ll withstand everything
-          the weather can offer.
-        </p>
-      </div>
-      <div class="prices">
-        <div class="price">$125.00</div>
-        <div class="discount">50%</div>
-        <div class="discount-value">$250.00</div>
-      </div>
-      <div class="quantity">0</div>
-      <button>Add to cart</button>
-    </div>
 
+        <div class="siema">
+          <div>
+            <img src="images/image-product-1.jpg" alt="" />
+          </div>
+          <div>
+            <img src="images/image-product-2.jpg" alt="" />
+          </div>
+          <div>
+            <img src="images/image-product-3.jpg" alt="" />
+          </div>
+          <div>
+            <img src="images/image-product-4.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+      <div class="main">
+        <div class="text">
+          <div class="orange-text">Sneaker Company</div>
+          <h1>Fall Limited Edition Sneakers</h1>
+          <p>
+            These low-profile sneakers are your perfect casual wear companion.
+            Featuring a durable rubber outer sole, they’ll withstand everything
+            the weather can offer.
+          </p>
+        </div>
+        <div class="prices">
+          <div class="price">$125.00</div>
+          <div class="discount">50%</div>
+          <div class="discount-value">$250.00</div>
+        </div>
+        <div class="quantity">0</div>
+        <button>Add to cart</button>
+      </div>
+    </div>
     <!-- siema carousel -->
     <script src="https://my.nikah.io/wp-includes/js/slider/siema.min.js"></script>
 
@@ -85,6 +93,12 @@
       const mySiema = new Siema({
         selector: ".siema",
       });
+      document
+        .querySelector(".prev")
+        .addEventListener("click", () => mySiema.prev());
+      document
+        .querySelector(".next")
+        .addEventListener("click", () => mySiema.next());
     </script>
   </body>
 </html>
