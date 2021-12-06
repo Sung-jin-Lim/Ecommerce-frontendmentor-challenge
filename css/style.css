@@ -1,0 +1,65 @@
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  width: 100%;
+}
+
+body {
+  font-size: 16px;
+  font-family: "Space Mono", monospace;
+}
+
+/* header */
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1rem 1.3rem;
+  background-color: white;
+}
+
+.menuItems {
+  display: none;
+}
+
+.navRight img {
+  width: 1.5rem;
+}
+
+.logo {
+  margin-left: 0.5rem;
+}
+
+.cart {
+  margin-right: 0.7rem;
+}
+
+.siema {
+  width: 100%;
+}
+
+.siema img {
+  width: 100%;
+}
+/*# sourceMappingURL=style.css.map */

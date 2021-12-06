@@ -1,0 +1,75 @@
+// colors primary
+$orange: hsl(26, 100%, 55%);
+$paleOrange: hsl(25, 100%, 94%);
+// secondary
+$veryVarkBlue: hsl(220, 13%, 13%);
+$darkGrayishBlue: hsl(219, 9%, 45%);
+$grayishBlue: hsl(220, 14%, 75%);
+$lightGrayishBlue: hsl(223, 64%, 98%);
+$white: hsl(0, 0%, 100%);
+// with75%opacityforlightboxbackground
+$black: hsl(0, 0%, 0%);
+
+// font weights
+$bold: 400;
+$bolder: 700;
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  width: 100%;
+}
+
+// final css
+
+body {
+  font-size: 16px;
+  font-family: "Space Mono", monospace;
+}
+
+/* header */
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.3rem;
+  background-color: white;
+}
+.menuItems {
+  display: none;
+}
+
+.navRight {
+  img {
+    width: 1.5rem;
+  }
+}
+
+// images margin in nav
+.logo {
+  margin-left: 0.5rem;
+}
+.cart {
+  margin-right: 0.7rem;
+}
+
+// carousel
+
+.siema {
+  width: 100%;
+  img {
+    width: 100%;
+  }
+}
