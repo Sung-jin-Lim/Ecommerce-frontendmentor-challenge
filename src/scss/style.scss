@@ -14,7 +14,7 @@ $black: hsl(0, 0%, 0%);
 $bold: 400;
 $bolder: 700;
 
-@use "_computer.scss";
+@use "computer";
 
 li {
   list-style: none;
